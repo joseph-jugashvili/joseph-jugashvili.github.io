@@ -1,0 +1,47 @@
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Таблица Шульте</title>
+  <link rel="stylesheet" href="tableStyle.css">
+  <link rel="shortcut icon" href="img/eye.ico" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <h1>Таблица Шульте</h1>
+  </header>
+  <div class="section-container">
+    <section class="section-left side-section">
+      <h2></h2>
+      <a href="index.html" class="button" id="menu-button">Меню</a>
+      <a href="#" class="button" id="restart-button">Начать заново</a>
+      <a href="#" class="button" id="refresh-button">Стереть лучшее время</a>
+      <a href="#" class="button" id="hint-button">Подсказка</a>
+    </section>
+    <section class="table-section">
+      <div id="table-container"></div>
+    </section>
+    <section class="section-right side-section">
+      <div class="right-container">
+        <p><span class="title">Текущее число: </span><span id="current-number" class="numbers">0</span></p>
+        <p><span class="title">Текущее время: </span><span id="current-time" class="numbers">0</span></p>
+        <p><span class="title">Лучшее время: </span><span id="best-time" class="numbers">0</span></p>
+        <p><span class="title">Подсказки: </span><span id="hints" class="numbers">0</span></p>
+        <p><span class="title">Промахи: </span><span id="missteps" class="numbers">0</span></p>
+      </div>
+    </section>
+  </div>
+  <div id="achieve-button" title="Новое достижение!">
+    <img src="img/test.png" alt="new achievement" id="new-achieve-img">
+  </div>
+  <section id="achievement-table">
+    <h2>Новые достижения!</h2>
+  </section>
+  <div id="end-alert-win" title="Вы выиграли!">
+    <img src="img/win.png" alt="You win!" class="alert-img" alt="Вы выиграли!">
+  </div>
+  <div id="end-alert-record" title="Новое лучшее время!">
+    <img src="img/record.png" alt="You win!" class="alert-img" alt="Новое лучшее время!">
+  </div>
+  <script async src="script.js"></script>
+</body>
+</html>

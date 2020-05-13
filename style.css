@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+@import url('https://fonts.googleapis.com/css?family=Abel');
+
+* {
+	-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+body, html, h1,h2,h3,h4,h5,h6, section, p {
+	font-family: 'Open Sans Condensed', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+header {
+	width: 100%;
+	background: #000;
+	color: #fff;
+	height: 50px;
+	text-align: center;
+	padding-top: 10px;
+	text-transform: uppercase;
+}
+header h1{
+	font-family: 'Abel', sans-serif;
+	font-weight: lighter;
+}
+section {
+	background: #fff;
+}
+.mode-section {
+	padding-top: 70px;
+}
+.container {
+	width: 900px;
+	margin: 0 auto;
+}
+section p {
+	font-size: 45px;
+	color: #000;
+	text-transform: uppercase;
+	text-align: center;
+}
+.row-container, .item-button {
+	height: 100px;
+}
+.row-container {
+	width: 900px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 50px;
+}
+.item-button {
+	width: 200px;
+	color: #000;
+	text-decoration: none;
+	background: none;
+	text-align: center;
+	padding-top: calc(50px - 0.625em);
+	box-sizing: border-box;
+	font-size: 30px;
+	border: 1px solid black;
+	transition: all 0.5s ease;
+}
+.item-button:hover{
+	color: #fff;
+	background: #000;
+}
+footer{
+	text-align: center;
+	padding-top: 100px;
+	color: grey;
+	padding-bottom: 30px;
+}
+#copyright {
+	margin-top: 30px;
+}
+#all-achievements {
+	border: 1px solid black;
+	margin-top: 80px;
+	padding: 35px 20px;
+}
+#all-achievements h2{
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: lighter;
+	margin-bottom: 35px;
+	font-size: 30px;
+}
+.achieve-row {
+	margin-top: 10px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	padding: 5px 0;
+	background: #fff;
+	transition: all 1s ease;
+	overflow: hidden;
+}
+.achieve-row:hover {
+	background: #e0e0e0;
+}
+.achieve-row img {
+	height: 100px;
+}
+.achieve-row h3 {
+	font-size: 30px;
+	margin-left: 20px;
+	text-transform: uppercase;
+	font-weight: lighter;	
+	width: 250px;
+	text-align: left;
+}
+.achieve-row p {
+	font-size: 20px;
+	margin-left: 20px;
+	text-transform: uppercase;
+	font-weight: lighter;	
+	width: 350px;
+	text-align: left;
+}
+.stat {
+	margin-left: 20px;
+	width: 120px;
+  	transition: all 1s ease;
+  	transform: translate3d(120%, 0px, 0px);
+  	font-size: 30px;
+  	text-transform: uppercase;
+  	padding-left: 60px;
+  	text-align: left;
+}
+.achieve-row:hover .stat{
+	transform: translate3d(0px, 0px, 0px);
+}
+#language {
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+}
+#language a {
+	text-decoration: none;
+	color: #000;
+	text-transform: uppercase;
+}
+#language a:hover {
+	text-decoration:underline;
+	cursor: pointer;
+}
+#delete-data {
+	float: right;
+	color: grey;
+	margin-top: 5px;
+}
+#delete-data:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}

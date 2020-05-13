@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Work+Sans:300,400');
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+@import url('https://fonts.googleapis.com/css?family=Abel');
+@import url('https://fonts.googleapis.com/css?family=Rajdhani');
+
+* {
+	-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+body, html, h1,h2,h3,h4,h5,h6, section, p {
+	font-family: 'Open Sans Condensed', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+header {
+	width: 100%;
+	background: #000;
+	color: #fff;
+	height: 50px;
+	text-align: center;
+	padding-top: 10px;
+	text-transform: uppercase;
+}
+header h1{
+	font-family: 'Abel', sans-serif;
+	font-weight: lighter;
+}
+.table-section {
+	margin: 0 auto;
+	width: 85vh;
+	height: 85vh;
+}
+#table-container {
+	width: 85vh;
+	height: 85vh;
+	box-sizing: border-box;
+}
+.row-container {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	box-sizing: border-box;
+}
+.table-item {
+	border: 1px solid grey;
+	box-sizing: border-box;
+	text-align: center;
+	background: #fff;
+	color: black;
+	font-weight: bold;
+	transition: all 0.2s ease;
+	font-family: 'Rajdhani', sans-serif;	
+}
+.table-item:hover {
+	background: lightgrey;
+	cursor: pointer;
+}
+.section-container {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 2vh;
+	box-sizing: border-box;
+}
+.side-section {
+	width: calc((100vw - 85vh) / 2);
+	text-align: center;
+}
+
+.side-section p {
+	text-align: center;
+}
+.section-right p {
+	font-size: 2.5vh;
+	text-align: left;
+	text-transform: uppercase;
+	margin-left: 5vh;
+}
+.right-container {
+	width: 80%;
+	margin: 0 auto;
+	border: 1px solid grey;
+	padding: 10vh 0;
+}
+.button {
+	display: block;
+	background: #fff;
+	color: #000;
+	font-size: 5vh;
+	text-transform: uppercase;
+	text-decoration: none;
+	width: 80%;
+	margin: 0 auto;
+	padding: 4vh 0;
+	text-align: center;
+	border: 1px solid grey;
+	bottom: 0;
+	box-sizing: border-box;
+	transition: all 0.3s ease;
+}
+.button:hover {
+	background: #000;
+	color: #fff;
+}
+.button:nth-child(3),.button:nth-child(4),.button:nth-child(5){
+	margin-top: 5vh;
+}
+.section-left,.section-right {
+	padding-top: 5vh;
+}
+.alert-img {
+	width: 13vh;
+}
+#end-alert-win {
+	display: none;
+	position: fixed;
+	transition: all 1s ease;
+	right: 10vw;
+	bottom: 0;
+	transform: translate3d(0px, 100%, 0px);
+	border: 1px solid grey;
+	border-bottom: none; 
+	border-radius: 15px 15px 0 0;
+	background: #fff;
+	padding: 2vh 0px;
+}
+#end-alert-record {
+	display: none;
+	position: fixed;
+	transition: all 1s ease;
+	right: 5vw;
+	bottom: 0;
+	transform: translate3d(0px, 100%, 0px);
+	border: 1px solid grey;
+	border-bottom: none; 
+	border-radius: 15px 15px 0 0;
+	background: #fff;
+	padding: 2vh 0px;
+}
+#achievement-table {
+	display: none;
+	position: fixed;
+	background: #fff;
+	border-left: 1px solid grey;
+	width: 35vw;
+	height: calc(100vh - 50px);
+	right: 0;
+	top: 60px;
+	z-index: 2;
+	transition: all 1s ease;
+	transform: translate3d(100%, 0px, 0px);
+	padding: 3vh 2vw;
+	overflow-y: scroll;
+	box-sizing: border-box;
+}
+#achieve-button {
+	display: none;
+	cursor: pointer;
+	position: fixed;
+	right: 0;
+	bottom: 25vh;
+	height: 10vh;
+	width: calc(10vh + 1px);
+	background: #fff;
+	border-radius: 15px 0 0 15px;
+	border: 1px solid grey;
+	border-right: none;
+	padding: 3px;
+	transition: all 1s ease;
+	z-index: 3;
+	transform: translate3d(100%, 0px, 0px);
+}
+#new-achieve-img {
+	height: 10vh;
+	width: 10vh;
+	transition: all 2s ease;
+}
+.rotate-button {
+	transform: rotate(360deg);
+}
+#get-achieve {
+	cursor: pointer;
+}
+.achieve-item {
+	width: 27vw;
+	display: inline-block;
+	border: 1px solid grey;
+	margin-top: 3vh;
+	padding: 2vh 1vw;
+	border-radius: 20px 0 0 20px;
+	clear: both;
+}
+.achieve-item img {
+	width: 6vw;
+	float: left;
+}
+.achieve-item__desc {
+	margin-left: 1vw;
+	width: 18vw;
+	float: left;
+	text-align: center;
+	padding: 0 1vw;
+	box-sizing: border-box;
+}
+#achievement-table h2 {
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: lighter;
